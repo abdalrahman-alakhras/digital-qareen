@@ -1,0 +1,110 @@
+{
+  "schema": "DQ-IV01-focused-replay-v1",
+  "original_commits": [
+    "987559517e5bef00fcbe341360270781352a4362",
+    "2c8ebf86c7914f1bdb69dcd1f4410537748fbe57"
+  ],
+  "entries": [
+    {
+      "snapshot": "red",
+      "path": "app/outbox_worker.py",
+      "original_commit": "987559517e5bef00fcbe341360270781352a4362",
+      "mode": "100644",
+      "blob": "be82afc4854bb676c9a0f35f334cc81cd89cd250",
+      "sha256": "6C8F03FF475DAC725B13CA6672E577E46FE82BF063E8E8B767720032D3F7B843",
+      "bytes": 22951
+    },
+    {
+      "snapshot": "red",
+      "path": "app/run_worker.py",
+      "original_commit": "987559517e5bef00fcbe341360270781352a4362",
+      "mode": "100644",
+      "blob": "02d854da3f78f78cd08440170e32406f583f82e1",
+      "sha256": "2E453E3F31155AE074AB3426FD25E0826323829533F7948F1F3D53D6808BBA8C",
+      "bytes": 1452
+    },
+    {
+      "snapshot": "red",
+      "path": "app/postgres_identity.py",
+      "original_commit": "987559517e5bef00fcbe341360270781352a4362",
+      "mode": "100644",
+      "blob": "2e2356c9272083eec16b68b6afbdb46e13768514",
+      "sha256": "1D7CAB504A20C0A7A864948491C6FB107BF0F610036EAE1507EA5B6C44C9D042",
+      "bytes": 3747
+    },
+    {
+      "snapshot": "red",
+      "path": "app/auth/provider_dispatch_gate.py",
+      "original_commit": "987559517e5bef00fcbe341360270781352a4362",
+      "mode": "100644",
+      "blob": "60570921e2a0fd8b32a38d95c815a0ab0f9f0307",
+      "sha256": "EE9F6C2DC61F9445DE44089982A4A89066BB61B7AE15D7DCD380226ABB255DD6",
+      "bytes": 1769
+    },
+    {
+      "snapshot": "red",
+      "path": "tests/test_p18d_f1b_supervision.py",
+      "original_commit": "987559517e5bef00fcbe341360270781352a4362",
+      "mode": "100644",
+      "blob": "9163250d18a1275544f63f27fb2ea7a845b76a48",
+      "sha256": "68DCBCE79B0041B8EAB00202B5C570156E05351750E7FA073BAA866DC7A151EE",
+      "bytes": 16524
+    },
+    {
+      "snapshot": "green",
+      "path": "app/outbox_worker.py",
+      "original_commit": "2c8ebf86c7914f1bdb69dcd1f4410537748fbe57",
+      "mode": "100644",
+      "blob": "318023e9926432c401901d3dd87717f203d64ac9",
+      "sha256": "D332DB4EB01929590F56A1E70558F11AB59CC18EB3DE538FB399B4DEB632D562",
+      "bytes": 24178
+    },
+    {
+      "snapshot": "green",
+      "path": "app/run_worker.py",
+      "original_commit": "2c8ebf86c7914f1bdb69dcd1f4410537748fbe57",
+      "mode": "100644",
+      "blob": "7c526b10298bec4e49895766af99dd608cdb188f",
+      "sha256": "7C1B7F19AEAC2290AD9B01A4C7C4CFD136348881333C265CEB654BD9FDE3B230",
+      "bytes": 2104
+    },
+    {
+      "snapshot": "green",
+      "path": "app/postgres_identity.py",
+      "original_commit": "2c8ebf86c7914f1bdb69dcd1f4410537748fbe57",
+      "mode": "100644",
+      "blob": "2e2356c9272083eec16b68b6afbdb46e13768514",
+      "sha256": "1D7CAB504A20C0A7A864948491C6FB107BF0F610036EAE1507EA5B6C44C9D042",
+      "bytes": 3747
+    },
+    {
+      "snapshot": "green",
+      "path": "app/auth/provider_dispatch_gate.py",
+      "original_commit": "2c8ebf86c7914f1bdb69dcd1f4410537748fbe57",
+      "mode": "100644",
+      "blob": "60570921e2a0fd8b32a38d95c815a0ab0f9f0307",
+      "sha256": "EE9F6C2DC61F9445DE44089982A4A89066BB61B7AE15D7DCD380226ABB255DD6",
+      "bytes": 1769
+    },
+    {
+      "snapshot": "green",
+      "path": "tests/test_p18d_f1b_supervision.py",
+      "original_commit": "2c8ebf86c7914f1bdb69dcd1f4410537748fbe57",
+      "mode": "100644",
+      "blob": "9163250d18a1275544f63f27fb2ea7a845b76a48",
+      "sha256": "68DCBCE79B0041B8EAB00202B5C570156E05351750E7FA073BAA866DC7A151EE",
+      "bytes": 16524
+    }
+  ],
+  "author_local_replay": {
+    "python": "3.14.0",
+    "red_expected_failures": 10,
+    "red_passing_controls": 4,
+    "green_passes": 14,
+    "fatal_exit": 1,
+    "graceful_exit": 0
+  },
+  "independent_replay": false,
+  "original_history_included": false,
+  "scope": "disclosure-limited source subsets; synthetic IO"
+}
