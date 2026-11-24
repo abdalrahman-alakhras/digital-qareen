@@ -1,5 +1,31 @@
 # Digital Qareen — DQ-IV01 focused supervision replay
 
+
+## Axiom_0 — Zero-Data Topology
+
+**Foundational design thesis — not a mathematical theorem.** More observations do not grant an AI agent execution authority. Explicit, scoped human authorization must be checked independently at the point of action. An agent may propose an operation; policy determines whether it is permitted; infrastructure enforces the decision; and evidence records the outcome.
+
+**Zero-Data** here means minimizing the retention and exposure of raw sensitive payloads. It does **not** mean that the gateway stores no state: scoped authorization, idempotency, budget and audit evidence can still be necessary. Neither reducing data nor adding constraints automatically reveals a person's intent.
+
+**AI Can Propose.**  
+**Policy Must Authorize.**  
+**Infrastructure Must Enforce.**  
+**Evidence Must Prove.**
+
+### RED → GREEN: published DQ-IV01 supervision witness
+
+```mermaid
+flowchart LR
+    W["Unchanged synthetic supervision witness"] --> R["RED baseline: 10 expected failures; 4 controls pass"]
+    W --> G["GREEN remediation: 14/14 scenarios pass"]
+    R --> I["Same measuring instrument; implementation changed"]
+    G --> I
+```
+
+The diagram summarizes the **published DQ-IV01 synthetic replay described below**. It does not establish a mathematical limit, production readiness, or publication of later private engineering milestones.
+
+---
+
 Disclosure-limited research candidate. Not a production release or security certification.
 
 Two five-file source sets reproduce the original L2-C7 and L3-C8 supervision witness. The witness is unchanged. The source sets are subsets, not full commit trees or an executable Git history. The manifest records the author's locally checked original Git commit, blob and SHA-256 identities. A reviewer without access to the original commit trees cannot independently verify original commit membership from this package alone. The original evidence is retained separately.
